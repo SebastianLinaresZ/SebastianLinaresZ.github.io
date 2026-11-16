@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  color: #111;
+  background: white;
+}
+
+.cv {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.cabecera {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.foto {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cabecera-texto {
+  flex: 1;
+}
+
+.cabecera h1 {
+  margin: 10px 0 0 0;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.profesion {
+  margin: 5px 0 0 0;
+  font-size: 22px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.cabecera hr {
+  border: none;
+  border-top: 2px solid #111;
+  margin: 30px 0;
+}
+
+.contacto {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacto li {
+  display: flex;
+  gap: 12px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.contacto svg {
+  width: 22px;
+  height: 22px;
+  fill: #111;
+}
+
+.contacto a {
+  color: #111;
+  text-decoration: none;
+}
+
+.seccion {
+  display: flex;
+  border-top: 2px solid #111;
+  padding: 25px 0;
+}
+
+.seccion:first-of-type {
+  border-top: none;
+}
+
+.seccion h2 {
+  width: 220px;
+  margin: 0;
+  padding-right: 40px;
+  font-size: 18px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.contenido {
+  flex: 1;
+}
+
+.contenido article {
+  margin-bottom: 20px;
+}
+
+.contenido h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.contenido p {
+  margin: 0;
+}
+
+.detalle {
+  color: #333;
+}
+
+.contenido ul {
+  margin: 10px 0 0 0;
+  padding-left: 35px;
+}
+
+.dos-columnas {
+  columns: 2;
+}
+
+.idiomas {
+  display: flex;
+  gap: 60px;
+}
+
+@media (max-width: 700px) {
+  .cabecera {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacto li {
+    width: 100%;
+  }
+
+  .seccion {
+    flex-direction: column;
+  }
+
+  .seccion h2 {
+    width: auto;
+    padding-right: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .dos-columnas {
+    columns: 1;
+  }
+
+  .idiomas {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
